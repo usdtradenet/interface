@@ -1,0 +1,44 @@
+// ==========================================================================
+// Fonts
+// ==========================================================================
+@mixin font($font-size, $font-weight, $line-height: 1.5) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+// ==========================================================================
+// Media query
+// ==========================================================================
+
+/* Set các giá trị với màn hình tương ứng */
+
+$mobile-width: 567px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$ipad-pro: 1336px;
+$desk-low: 1336px;
+$desk-high: 1920px;
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin ipadPro {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$ipad-pro - 1px}) {
+        @content;
+    }
+}
+
+@mixin desk {
+    @media (min-width: #{$desktop-width + 1px }) {
+        @content;
+    }
+}

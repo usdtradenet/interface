@@ -1,0 +1,22 @@
+// ==========================================================================
+// Font Include
+// ==========================================================================
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+// ==========================================================================
+// Common
+// ==========================================================================
+* {}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-feature-settings: "palt";
+    letter-spacing: 0.06em;
+    line-height: 1.75;
+    position: relative;
+    font-size: 1.4rem;
+}

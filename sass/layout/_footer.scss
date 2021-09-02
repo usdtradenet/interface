@@ -1,0 +1,74 @@
+.footer {
+    .container {
+        width: 100%;
+        max-width: 1100px;
+    }
+    .footer__top {
+        padding: 80px 0;
+        .footer__info {
+            @include mobile {
+                text-align: center;
+            }
+            .footer-info__img {
+                text-align: center;
+            }
+            .footer__info-text {
+                margin-top: 50px;
+                font-size: 15px;
+                line-height: 25px;
+                color: #e7e8eb;
+            }
+        }
+        .footer__title {
+            @include mobile {
+                margin-top: 30px;
+                text-align: center;
+            }
+            @include font(1.4rem, 700, 2rem);
+            -webkit-font-feature-settings: "liga" off;
+            font-feature-settings: "liga" off;
+            color: #e7e8eb;
+            margin-bottom: 42px;
+        }
+        .footer__item {
+            @include mobile {
+                text-align: center;
+            }
+            margin-bottom: 10px;
+            .footer__link {
+                @include font(1.4rem, 500, 2rem);
+                color: #e7e8eb;
+                transition: color ease 1s;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        @include mobile {
+            padding: 50px;
+        }
+        padding: 20px;
+        .footer__title {
+            color: #fff;
+        }
+        .footer__item {
+            margin-left: 10px;
+        }
+    }
+    .footer--icon {
+        border-bottom: 1px solid #393939;
+        @include mobile {
+            .footer__list {
+                .footer__item {
+                    margin-left: unset;
+                    .footer__link {
+                        display: block;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
